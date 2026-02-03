@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
@@ -10,7 +12,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-20 pt-32">
         {/* Top Decorative Element */}
-        <div className="mb-12 flex items-center gap-4 w-full max-w-md">
+        <div className="mb-4 flex items-center gap-4 w-full max-w-md">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#c9a860] to-transparent"></div>
           <div className="w-2 h-2 bg-[#c9a860] rotate-45"></div>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#c9a860] to-transparent"></div>
@@ -18,13 +20,18 @@ export default function Home() {
 
         {/* Brand Name */}
         <div className="text-center mb-16">
-          <h1 className="font-[var(--font-cormorant)] text-7xl md:text-8xl lg:text-9xl font-light tracking-[0.2em] text-white mb-2">
-            VALORA
-          </h1>
-          <p className="font-[var(--font-cormorant)] text-white/60 text-xl md:text-2xl tracking-[0.15em] italic mb-6">
-            by Jev
-          </p>
-          <p className="font-[var(--font-inter)] text-[#c9a860] text-xs md:text-sm tracking-[0.3em] uppercase">
+          <div className="flex justify-center mb-3">
+            <Image
+              src="/valora-logo.png?v=2"
+              alt="VALORA by Jev"
+              width={900}
+              height={340}
+              className="h-40 md:h-48 lg:h-56 w-auto"
+              priority
+              unoptimized
+            />
+          </div>
+          <p className="font-[var(--font-inter)] text-white/60 text-xs md:text-sm tracking-[0.3em] uppercase">
             Luxury Beauty
           </p>
         </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
@@ -12,14 +13,15 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="group">
-            <div className="text-center">
-              <h2 className="font-[var(--font-cormorant)] text-2xl md:text-3xl font-light tracking-[0.2em] text-white group-hover:text-[#c9a860] transition-colors">
-                VALORA
-              </h2>
-              <p className="font-[var(--font-cormorant)] text-xs text-white/60 tracking-[0.15em] italic">
-                by Jev
-              </p>
-            </div>
+            <Image
+              src="/valora-logo.png?v=2"
+              alt="VALORA by Jev"
+              width={200}
+              height={60}
+              className="h-14 w-auto transition-opacity group-hover:opacity-80"
+              priority
+              unoptimized
+            />
           </Link>
 
           {/* Navigation Links */}
