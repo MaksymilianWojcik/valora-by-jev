@@ -102,8 +102,13 @@ const products = {
   }
 };
 
-export default function ProductDetail({ params }: { params: { slug: string } }) {
-  const product = products[params.slug as keyof typeof products];
+export default async function ProductDetail({
+  params
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const product = products[slug as keyof typeof products];
 
   if (!product) {
     notFound();
