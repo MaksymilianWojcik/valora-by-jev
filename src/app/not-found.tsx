@@ -1,6 +1,10 @@
-import Link from "next/link";
+ "use client";
+
+import { useRouter } from "next/navigation";
 
 export default function NotFound() {
+  const router = useRouter();
+
   return (
     <div className="relative min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -24,12 +28,13 @@ export default function NotFound() {
             This page couldn't be found. Let's return to something beautiful.
           </p>
 
-          <Link
-            href="/products"
+          <button
+            type="button"
+            onClick={() => router.back()}
             className="inline-flex items-center justify-center border border-[#c9a860]/60 px-6 py-3 rounded-full text-[#c9a860] uppercase tracking-[0.2em] text-xs hover:bg-[#c9a860] hover:text-black transition-colors"
           >
-            Back to Products
-          </Link>
+            Go Back
+          </button>
         </div>
       </main>
     </div>
