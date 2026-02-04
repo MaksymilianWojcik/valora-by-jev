@@ -8,7 +8,8 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-[#c9a860]/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-[#c9a860]/20 relative">
+      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#c9a860]/60 to-transparent" />
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -18,7 +19,7 @@ export default function Navigation() {
               alt="VALORA by Jev"
               width={200}
               height={60}
-              className="h-14 w-auto transition-opacity group-hover:opacity-80"
+              className="h-12 md:h-14 w-auto transition-opacity group-hover:opacity-80"
               priority
               unoptimized
             />
@@ -28,7 +29,7 @@ export default function Navigation() {
           <div className="flex items-center gap-8">
             <Link
               href="/"
-              className={`font-[var(--font-inter)] text-sm tracking-[0.15em] uppercase transition-colors ${
+              className={`font-[var(--font-inter)] text-sm tracking-[0.2em] uppercase transition-colors ${
                 pathname === '/'
                   ? 'text-[#c9a860]'
                   : 'text-white/70 hover:text-[#c9a860]'
@@ -38,7 +39,7 @@ export default function Navigation() {
             </Link>
             <Link
               href="/products"
-              className={`font-[var(--font-inter)] text-sm tracking-[0.15em] uppercase transition-colors ${
+              className={`font-[var(--font-inter)] text-sm tracking-[0.2em] uppercase transition-colors ${
                 pathname === '/products'
                   ? 'text-[#c9a860]'
                   : 'text-white/70 hover:text-[#c9a860]'
@@ -48,7 +49,7 @@ export default function Navigation() {
             </Link>
             <Link
               href="/contact"
-              className={`font-[var(--font-inter)] text-sm tracking-[0.15em] uppercase transition-colors ${
+              className={`font-[var(--font-inter)] text-sm tracking-[0.2em] uppercase transition-colors ${
                 pathname === '/contact'
                   ? 'text-[#c9a860]'
                   : 'text-white/70 hover:text-[#c9a860]'

@@ -116,6 +116,7 @@ export default function ProductDetail({ params }: { params: { slug: string } }) 
         <div className="absolute top-20 right-10 w-64 h-64 bg-[#c9a860] rounded-full blur-[120px]"></div>
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#c9a860] rounded-full blur-[150px]"></div>
       </div>
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(70%_70%_at_50%_0%,rgba(201,168,96,0.10)_0%,rgba(10,10,10,0)_60%)]" />
 
       {/* Main Content */}
       <main className="relative z-10 px-6 py-32">
@@ -138,15 +139,15 @@ export default function ProductDetail({ params }: { params: { slug: string } }) 
               <div className="absolute -bottom-4 -left-4 w-8 h-8 border-l border-b border-[#c9a860]"></div>
               <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r border-b border-[#c9a860]"></div>
               
-              <div className="aspect-square bg-gradient-to-br from-[#c9a860]/10 to-transparent border border-[#c9a860]/30 flex items-center justify-center">
-                <svg className="w-32 h-32 text-[#c9a860]/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="aspect-square bg-gradient-to-br from-[#c9a860]/12 via-black/40 to-transparent border border-[#c9a860]/30 flex items-center justify-center shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+                <svg className="w-32 h-32 text-[#c9a860]/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
             </div>
 
             {/* Product Info */}
-            <div>
+            <div className="bg-black/35 backdrop-blur-md border border-[#c9a860]/20 p-8 shadow-[0_0_60px_rgba(201,168,96,0.08)]">
               <p className="font-[var(--font-inter)] text-[#c9a860] text-sm uppercase tracking-wider mb-3">
                 {product.category}
               </p>

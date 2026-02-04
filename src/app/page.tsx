@@ -8,6 +8,7 @@ export default function Home() {
         <div className="absolute top-20 left-10 w-64 h-64 bg-[#c9a860] rounded-full blur-[120px]"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#c9a860] rounded-full blur-[150px]"></div>
       </div>
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(60%_60%_at_50%_0%,rgba(201,168,96,0.12)_0%,rgba(10,10,10,0)_60%)]" />
 
       {/* Main Content */}
       <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-20 pt-32">
@@ -26,12 +27,12 @@ export default function Home() {
               alt="VALORA by Jev"
               width={900}
               height={340}
-              className="h-40 md:h-48 lg:h-56 w-auto"
+              className="h-40 md:h-48 lg:h-56 w-auto drop-shadow-[0_0_40px_rgba(201,168,96,0.15)]"
               priority
               unoptimized
             />
           </div>
-          <p className="font-[var(--font-inter)] text-white/60 text-xs md:text-sm tracking-[0.3em] uppercase">
+          <p className="font-[var(--font-inter)] text-white/90 text-xs md:text-sm tracking-[0.3em] uppercase">
             Luxury Beauty
           </p>
         </div>
@@ -48,7 +49,7 @@ export default function Home() {
         </div>
 
         {/* Brand Story Section */}
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="relative">
             {/* Corner Decorations */}
             <div className="absolute -top-4 -left-4 w-8 h-8 border-l border-t border-[#c9a860]"></div>
@@ -57,7 +58,7 @@ export default function Home() {
             <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r border-b border-[#c9a860]"></div>
 
             {/* Content */}
-            <div className="px-12 py-16 bg-black/30 backdrop-blur-sm border border-[#c9a860]/20">
+            <div className="px-10 md:px-12 py-14 md:py-16 bg-black/40 backdrop-blur-md border border-[#c9a860]/20 shadow-[0_0_60px_rgba(201,168,96,0.08)]">
               <h2 className="font-[var(--font-cormorant)] text-3xl md:text-4xl font-light text-[#c9a860] text-center mb-8 tracking-wide">
                 Our Story
               </h2>

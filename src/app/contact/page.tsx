@@ -6,6 +6,7 @@ export default function Contact() {
         <div className="absolute top-20 right-10 w-64 h-64 bg-[#c9a860] rounded-full blur-[120px]"></div>
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#c9a860] rounded-full blur-[150px]"></div>
       </div>
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(70%_70%_at_50%_0%,rgba(201,168,96,0.10)_0%,rgba(10,10,10,0)_60%)]" />
 
       {/* Main Content */}
       <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-32">
@@ -34,7 +35,7 @@ export default function Contact() {
               <div className="absolute -top-3 -left-3 w-6 h-6 border-l border-t border-[#c9a860]"></div>
               <div className="absolute -bottom-3 -right-3 w-6 h-6 border-r border-b border-[#c9a860]"></div>
               
-              <div className="bg-black/30 backdrop-blur-sm border border-[#c9a860]/20 p-8">
+              <div className="bg-black/40 backdrop-blur-md border border-[#c9a860]/20 p-8 shadow-[0_0_50px_rgba(201,168,96,0.08)]">
                 <h2 className="font-[var(--font-cormorant)] text-2xl md:text-3xl font-light text-[#c9a860] mb-6 tracking-wide">
                   Get in Touch
                 </h2>
@@ -77,7 +78,7 @@ export default function Contact() {
             <div className="absolute -top-3 -left-3 w-6 h-6 border-l border-t border-[#c9a860]"></div>
             <div className="absolute -bottom-3 -right-3 w-6 h-6 border-r border-b border-[#c9a860]"></div>
             
-            <div className="bg-black/30 backdrop-blur-sm border border-[#c9a860]/20 p-8">
+            <div className="bg-black/40 backdrop-blur-md border border-[#c9a860]/20 p-8 shadow-[0_0_50px_rgba(201,168,96,0.08)]">
               <h2 className="font-[var(--font-cormorant)] text-2xl md:text-3xl font-light text-[#c9a860] mb-6 tracking-wide">
                 Send a Message
               </h2>
@@ -90,7 +91,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full bg-black/50 border border-[#c9a860]/30 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a860] transition-colors"
+                    className="w-full bg-black/50 border border-[#c9a860]/30 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a860] focus:ring-1 focus:ring-[#c9a860]/40 transition-colors"
                     placeholder="Your name"
                   />
                 </div>
@@ -102,7 +103,7 @@ export default function Contact() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full bg-black/50 border border-[#c9a860]/30 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a860] transition-colors"
+                    className="w-full bg-black/50 border border-[#c9a860]/30 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a860] focus:ring-1 focus:ring-[#c9a860]/40 transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -114,14 +115,14 @@ export default function Contact() {
                   <textarea
                     id="message"
                     rows={5}
-                    className="w-full bg-black/50 border border-[#c9a860]/30 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a860] transition-colors resize-none"
+                    className="w-full bg-black/50 border border-[#c9a860]/30 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a860] focus:ring-1 focus:ring-[#c9a860]/40 transition-colors resize-none"
                     placeholder="Your message..."
                   ></textarea>
                 </div>
                 
                 <button
                   type="submit"
-                  className="w-full bg-[#c9a860] text-black font-medium py-3 px-6 rounded uppercase tracking-wider hover:bg-[#e5d5a8] transition-colors"
+                  className="w-full bg-gradient-to-r from-[#c9a860] via-[#e5d5a8] to-[#c9a860] text-black font-medium py-3 px-6 rounded uppercase tracking-wider hover:brightness-110 transition-all"
                 >
                   Send Message
                 </button>

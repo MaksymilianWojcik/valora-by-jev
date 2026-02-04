@@ -61,6 +61,7 @@ export default function Products() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#c9a860] rounded-full blur-[150px]"></div>
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[#c9a860] rounded-full blur-[120px]"></div>
       </div>
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(70%_70%_at_50%_0%,rgba(201,168,96,0.10)_0%,rgba(10,10,10,0)_60%)]" />
 
       {/* Main Content */}
       <main className="relative z-10 px-6 py-32">
@@ -96,7 +97,7 @@ export default function Products() {
 
         {/* Products Grid */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {products.map((product, index) => (
               <div key={index} className="group relative">
                 {/* Corner Decorations */}
@@ -106,10 +107,10 @@ export default function Products() {
                 <div className="absolute -bottom-3 -right-3 w-6 h-6 border-r border-b border-[#c9a860] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Product Card */}
-                <div className="bg-black/30 backdrop-blur-sm border border-[#c9a860]/20 p-8 h-full flex flex-col transition-all duration-300 group-hover:border-[#c9a860]/50 group-hover:bg-black/50">
+                <div className="bg-black/35 backdrop-blur-md border border-[#c9a860]/20 p-8 h-full flex flex-col transition-all duration-300 group-hover:border-[#c9a860]/50 group-hover:bg-black/55 group-hover:-translate-y-1 group-hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]">
                   {/* Product Image Placeholder */}
-                  <div className="mb-6 aspect-square bg-gradient-to-br from-[#c9a860]/10 to-transparent border border-[#c9a860]/30 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-[#c9a860]/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="mb-6 aspect-square bg-gradient-to-br from-[#c9a860]/12 via-black/40 to-transparent border border-[#c9a860]/30 flex items-center justify-center">
+                    <svg className="w-16 h-16 text-[#c9a860]/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                     </svg>
                   </div>
@@ -131,7 +132,7 @@ export default function Products() {
                       </span>
                       <Link 
                         href={`/products/${product.slug}`}
-                        className="font-[var(--font-inter)] text-xs uppercase tracking-wider text-white/70 hover:text-[#c9a860] transition-colors"
+                        className="font-[var(--font-inter)] text-[11px] uppercase tracking-[0.2em] text-[#c9a860] border border-[#c9a860]/50 px-3 py-1.5 rounded-full hover:bg-[#c9a860] hover:text-black transition-colors"
                       >
                         Learn More
                       </Link>
