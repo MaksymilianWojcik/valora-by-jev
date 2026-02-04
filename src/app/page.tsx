@@ -11,9 +11,9 @@ export default function Home() {
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(60%_60%_at_50%_0%,rgba(201,168,96,0.12)_0%,rgba(10,10,10,0)_60%)]" />
 
       {/* Main Content */}
-      <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-20 pt-32">
+      <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-20 pt-28">
         {/* Top Decorative Element */}
-        <div className="mb-4 flex items-center gap-4 w-full max-w-md">
+        <div className="mb-3 flex items-center gap-4 w-full max-w-md">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#c9a860] to-transparent"></div>
           <div className="w-2 h-2 bg-[#c9a860] rotate-45"></div>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#c9a860] to-transparent"></div>
@@ -72,6 +72,48 @@ export default function Home() {
                 <p className="text-[#c9a860] font-medium text-center pt-4 text-lg">
                   This is not just beauty. This is Selfmade.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Reviews Section */}
+        <div className="max-w-6xl mx-auto mt-16 w-full">
+          <div className="mb-10 flex items-center gap-3 justify-center">
+            <div className="w-10 h-px bg-[#c9a860]"></div>
+            <div className="w-1.5 h-1.5 bg-[#c9a860] rotate-45"></div>
+            <p className="font-[var(--font-inter)] text-xs uppercase tracking-[0.35em] text-white/70">
+              Testimonials
+            </p>
+            <div className="w-1.5 h-1.5 bg-[#c9a860] rotate-45"></div>
+            <div className="w-10 h-px bg-[#c9a860]"></div>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="bg-black/35 backdrop-blur-md border border-[#c9a860]/20 p-6 shadow-[0_0_50px_rgba(201,168,96,0.08)]">
+              <p className="font-[var(--font-inter)] text-gray-300 text-sm leading-relaxed">
+                “Valora Red has become my signature. It feels powerful without being loud — exactly who I am.”
+              </p>
+              <div className="mt-4 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[#c9a860]">
+                <span>Marina K.</span>
+                <span>★★★★★</span>
+              </div>
+            </div>
+            <div className="bg-black/35 backdrop-blur-md border border-[#c9a860]/20 p-6 shadow-[0_0_50px_rgba(201,168,96,0.08)]">
+              <p className="font-[var(--font-inter)] text-gray-300 text-sm leading-relaxed">
+                “Fearless is elegance with edge. Every time I wear it, people ask what I’m wearing.”
+              </p>
+              <div className="mt-4 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[#c9a860]">
+                <span>Riya S.</span>
+                <span>★★★★★</span>
+              </div>
+            </div>
+            <div className="bg-black/35 backdrop-blur-md border border-[#c9a860]/20 p-6 shadow-[0_0_50px_rgba(201,168,96,0.08)]">
+              <p className="font-[var(--font-inter)] text-gray-300 text-sm leading-relaxed">
+                “The story speaks to me. It feels like the brand was made for women who built their own lives.”
+              </p>
+              <div className="mt-4 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[#c9a860]">
+                <span>Ana D.</span>
+                <span>★★★★★</span>
               </div>
             </div>
           </div>
